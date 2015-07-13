@@ -1,0 +1,25 @@
+######################
+# Imports
+######################
+import("Formula")
+import("stats")
+import("MfUSampler")
+importFrom("sns", "ess")
+importFrom("bayesm", "rmultireg")
+importFrom("bayesm", "rhierLinearModel")
+
+######################
+# Exports
+######################
+export("hbglm")
+export("hbglm.sampler.control")
+export("hbglm.model.control")
+
+######################
+# hbglm methods
+######################
+S3method("print", "hbglm")
+S3method("predict", "hbglm")
+S3method("summary", "hbglm")
+S3method("coef", "hbglm")
+S3method("print", "summary.hbglm")
